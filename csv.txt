@@ -1,0 +1,51 @@
+Pais,Poblacion,Superficie,Continente
+india,1476600000,3287263,Asia
+China,1412900000,9596960,Asia
+Estados Unidos,349000000,9833517,America
+indonesia,287800000,1904569,Asia
+Pakistan,259300000,796095,Asia
+Nigeria,242400000,923768,africa
+Brasil,213200000,8515770,America
+Bangladesh,176800000,147570,Asia
+Rusia,144000000,17098242,Europa/Asia
+Mexico,129000000,1964375,America
+Japon,124000000,377915,Asia
+Filipinas,117000000,300000,Asia
+Egipto,112000000,1001450,africa
+Etiopia,126000000,1104300,africa
+Vietnam,99000000,331210,Asia
+iran,89000000,1648195,Asia
+Turquia,86000000,783562,Asia
+Alemania,84000000,357022,Europa
+Tailandia,71000000,513120,Asia
+Reino Unido,68000000,243610,Europa
+Francia,65000000,551695,Europa
+italia,59000000,301340,Europa
+Sudafrica,60400000,1221037,africa
+Tanzania,67000000,947300,africa
+Birmania,54000000,676578,Asia
+Colombia,52000000,1141748,America
+Corea del Sur,51000000,100210,Asia
+España,48000000,505990,Europa
+Argentina,46200000,2780400,America
+Argelia,45000000,2381740,africa
+irak,46000000,438317,Asia
+Sudan,48000000,1861484,africa
+Ucrania,37000000,603550,Europa
+Canada,39000000,9984670,America
+Polonia,38000000,312685,Europa
+Marruecos,37000000,446550,africa
+Arabia Saudita,36000000,2149690,Asia
+Peru,34000000,1285216,America
+Angola,36000000,1246700,africa
+Malasia,34000000,329847,Asia
+Uzbekistan,36000000,447400,Asia
+Mozambique,34000000,801590,africa
+Ghana,33000000,238533,africa
+Yemen,34000000,527968,Asia
+Nepal,31000000,147181,Asia
+Venezuela,29000000,912050,America
+Madagascar,30000000,587040,africa
+Australia,26500000,7741220,Oceanía
+Corea del Norte,26000000,120538,Asia
+Níger,27000000,1267000,africa
