@@ -44,5 +44,5 @@ puede ser iniciado y desplegado.
 
 **Archivos y links adjuntos**
 
-Video Demostrativo:** [Haz clic aquí para ver la defensa en video](URL_DE_TU_VIDEO) (Duración: 10-15 minutos).
-Documentación Académica (PDF):** [Descargar Informe Técnico Completo](./documentacion.pdf) (Incluye diagramas de flujo modelados en diagrams.net).
+Video explicativo: .
+Informe adjunto (PDF):  .
