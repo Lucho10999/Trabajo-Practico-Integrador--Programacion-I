@@ -7,6 +7,7 @@ def validar_texto(n):   # Funcion para validar texto, no sea espacio en blanco y
         print("\nNombre invalido,ningun país tiene numeros\n")
         return False
     return True 
+
 def validar_numero(n): # Funcion para validar numeros, no sea espacio en blanco y no contenga letras.  
     if n =="":
         print("\nEspacio vacio,comience de nuevo\n")
@@ -15,14 +16,17 @@ def validar_numero(n): # Funcion para validar numeros, no sea espacio en blanco 
         print("\nNumero invalido,intente de nuevo\n")
         return False
     return True
+
 def copiar_lista(): # La funcion copia el archivo CSV a una lista para el uso que se nesesite
     with open("c:/Users/Usuario/Desktop/csv.txt","r",newline="",encoding="UTF-8") as archivo:
             lector= csv.reader(archivo)
             return list(lector)
+
 def mostrar_tabla_paises(n): # Funcion para mostrar en la consola ,alineados, los elementos de la lista requeridos
     print(f"{"país":<20} {"poblacion":<12} {"superficie":<12} {"continente":<15}\n")
     for i in n:
         print(f"{i[0]:<20} {i[1]:<12} {i[2]:<12} {i[3]:<15}") 
+
 def texto_a_lower(n):# Utilizada en opcion 4-1 .Esta funcion normaliza el texto como la categoria continente o pais de la lista                                   
      return n.strip().replace(" ","").replace("í","i").lower()
          
@@ -44,6 +48,7 @@ def pais_repetido(n,opcion_uno): #Utilizada en opcion 1 y 2
             print("\nEl pais no se encuentra en la lista\n")
             return False
         return True  
+
 def agregar_y_mostrar(n,m,o,p):
     m= int(m)  # Pasamos los valores a int si es nesesario 
     o= int(o)
@@ -72,6 +77,7 @@ def actualizar_lista(n,m,o):  # La funcion toma los valores introducidos por el 
             print(f"\nLos datos actualizados son:\n ")
             mostrar_tabla_paises(lista[1:])                        
             break                     
+
 def guardar_en_archivo_sobrescribir(ruta, lista): # La funcion sobreescribe el archivo por completo                 
     with open(ruta,"w", newline="",encoding="UTF-8") as archivo: # que se usa para modificar un elemento de la lista                       
                     escritor= csv.writer(archivo) 
@@ -79,16 +85,19 @@ def guardar_en_archivo_sobrescribir(ruta, lista): # La funcion sobreescribe el a
                      
 # Utilizada en opcion 3
 def busqueda_tres(n,m,busqueda):
-    for i in n:  # toma la busqueda y verifica con "in" si esta el en primer elemento, categoria nombre del pais 
+
+    for i in n[1:]:  # toma la busqueda y verifica con "in" si esta el en primer elemento, categoria nombre del pais 
         
-        if busqueda in (i[0]).strip().replace(" ","").replace("í","i").lower() :                
+        if busqueda in (i[0]).strip().replace(" ", "").replace("í", "i").lower():                
             m.append(i)
+            
 # Utilizadas en opcion 4
-def busqueda_tres(n,m,busqueda): # Toma la busqueda y verifica con "==" los elemenos de categoria
+def busqueda_cuatro_tres(n,m,busqueda): # Toma la busqueda y verifica con "==" los elementos de categoria
     for i in n[1:]:              # continente que coinciden            
 
         if busqueda == texto_a_lower(i[3]):                        
             m.append(i) 
+
 def opcion_cuatro_dos_y_tres(n,m,cuatro_dos):  # Utilizada en opcion 4 - 2 y 3
     if cuatro_dos:
         for i in lista[1:]: # Comparamos los limites con la categoria correspondiente  
@@ -98,6 +107,7 @@ def opcion_cuatro_dos_y_tres(n,m,cuatro_dos):  # Utilizada en opcion 4 - 2 y 3
         for i in lista[1:]:                  
             if n <= int(i[2]) and m >= int(i[2]) :                        
                 lista_busqueda.append(i)           
+
 # Utilizadas en opcion 5 
 def ordenar_por_nombre(n,m,cinco_uno): # Utilizada en opcion 5 - 1  
     if cinco_uno:                      # La funcion utiliza el metodo sorted en la columna pais
@@ -108,6 +118,7 @@ def ordenar_por_nombre(n,m,cinco_uno): # Utilizada en opcion 5 - 1
         n=sorted(m[1:],reverse=True)
         print("\nLos paises de la Z a la A son\n")
         mostrar_tabla_paises(n) 
+
 def burbuja1(n,opcion_cinco_dos): #Utilizada en opcion 5 - 2
     if opcion_cinco_dos:
         for i in range (len(n)-1):  # Utilizamos el algoritmo burbuja
@@ -137,6 +148,8 @@ def burbuja1(n,opcion_cinco_dos): #Utilizada en opcion 5 - 2
             
         print(f"\nLos paises por población descendente son:\n ")                        
         mostrar_tabla_paises(n)
+        
+        
 def burbuja(n,opcion_cinco_3):    #Utilizada en opcion 5 - 3
     if opcion_cinco_3:           # Es la funcion anterior adaptada a otra opcion
         for i in range (len(n)-1):  
@@ -202,6 +215,7 @@ def validar_filtro(n): # opcion 6 - 4
     else:
         print("""\nSolo es valido "si" o "no" en este campo, de vuelta al menu\n""")        
         return False
+    
 def paises_por_continente(m):
     for i in lista: # Funcion para contar los paises por continente
         if i[3] in m:
@@ -294,14 +308,14 @@ while opcion != 7:  # \n
             actualizar_lista(pais,poblacion,superficie) # Luego de actualizar el pais en la lista
                                                         # se reescribe el archivo por completo                    
                                                         # con el pais actualizado                 
-            guardar_en_archivo_sobrescribir("c:/Users/Usuario/Desktop/csv.txt", lista)   #queda en archivo prueba                     
+            guardar_en_archivo_sobrescribir("c:/Users/Usuario/Desktop/csv.txt", lista)                        
     if seleccion == "3":
         lista=copiar_lista() # aplicando mismos metodo a la busqueda del usuario y la busqueda en el bucle for de la funcion                           
         
-        busqueda=input("Buscar país ").strip().replace(" ","").replace("í","i").lower()
+        busqueda=input("Buscar país ").strip().replace(" ", "").replace("í", "i").lower()
         if not validar_texto(busqueda): 
             continue
-        lista_busqueda=[]  #se reinicia la lista
+        lista_busqueda=[]  #se reinicia la lista       
 
         busqueda_tres(lista,lista_busqueda,busqueda)
         print(f"""\nLas coincidencias encontradas con "{busqueda}" son:\n """)
@@ -325,7 +339,7 @@ while opcion != 7:  # \n
                 lista_busqueda=[]                                         
                 lista=copiar_lista() # Se busca utilizando la funcion y muestra en pantalla
             
-                busqueda_tres(lista,lista_busqueda,busqueda)                      
+                busqueda_cuatro_tres(lista,lista_busqueda,busqueda)                      
                 print(f"""\nLos paises en "{busqueda}" son:\n """)
                 mostrar_tabla_paises(lista_busqueda)
                 
