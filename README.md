@@ -44,5 +44,6 @@ puede ser iniciado y desplegado.
 
 **Archivos y links adjuntos**
 
-Video explicativo: https://docs.google.com/document/d/1YryZTahKMNDhu3PnZx7oEEMV_apKx-ip/edit?usp=drive_link&ouid=105918280424194697893&rtpof=true&sd=true
-Informe adjunto (PDF): https://drive.google.com/file/d/19DWoq6bW58XNKf0C0wtPAIsdojyN-odQ/view?usp=sharing
+Video explicativo: https://drive.google.com/file/d/17JEvlKe0OFDeIWafot31pxZjYZKDgh9U/view?usp=sharing   
+
+Informe adjunto (PDF): https://drive.google.com/file/d/1vRIc3mOPuPTD8ckvchZd8UhAAmxvCg3z/view?usp=sharing
